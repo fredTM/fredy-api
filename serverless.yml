@@ -1,0 +1,30 @@
+service: fredy-api
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+
+functions:
+  api:
+    handler: handler.app
+    events:
+      - http:
+          path: /
+          method: ANY
+
+resources:
+  Resources:
+    MiDynamoDBTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: miTablaDynamoDB
+        AttributeDefinitions:
+          - AttributeName: id
+            AttributeType: S
+        KeySchema:
+          - AttributeName: id
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
