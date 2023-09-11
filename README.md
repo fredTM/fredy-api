@@ -12,7 +12,7 @@
 1. Clona este repositorio:
 
    ```shell
-   git clone <URL del repositorio>
+   git clone https://github.com/fredTM/fredy-api.git
 
 2. Navega al directorio del proyecto:
 
