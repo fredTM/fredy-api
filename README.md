@@ -20,28 +20,31 @@
 3. Instala las dependencias:
 
     npm install
-Uso
-Adaptar y Transformar Modelos SWAPI
-Obtener un Personaje de SWAPI
 
-Método: GET
+## Uso
 
-Ruta: /obtener-personaje/:id
+### Adaptar y Transformar Modelos SWAPI
 
-Parámetro de Ruta: id (ID del personaje)
+- **Obtener un Personaje de SWAPI**
 
-Respuesta Exitosa:
+  - **Método**: GET
+  - **Ruta**: `/obtener-personaje/:id`
+  - **Parámetro de Ruta**: `id` (ID del personaje)
+  - **Respuesta Exitosa**:
 
-{
-  "nombre": "Nombre del Personaje",
-  "altura": "Altura en centímetros",
-  "peso": "Peso en kilogramos",
-  "color_piel": "Color de la piel",
-  "color_cabello": "Color del cabello",
-  "color_ojos": "Color de los ojos",
-  "fecha_nacimiento": "Fecha de nacimiento",
-  "género": "Género"
-}
+    ```json
+    {
+      "nombre": "Nombre del Personaje",
+      "altura": "Altura en centímetros",
+      "peso": "Peso en kilogramos",
+      "color_piel": "Color de la piel",
+      "color_cabello": "Color del cabello",
+      "color_ojos": "Color de los ojos",
+      "fecha_nacimiento": "Fecha de nacimiento",
+      "género": "Género"
+    }
+    ```
+
 Crear un Registro en SWAPI
 
 Método: POST
