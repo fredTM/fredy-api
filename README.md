@@ -45,34 +45,42 @@
     }
     ```
 
-Crear un Registro en SWAPI
+### Crear un Registro en SWAPI
 
-Método: POST
+- **Método**: POST
+- **Ruta**: `/crear-registro`
+- **Cuerpo de la Solicitud**:
 
-Ruta: /crear-registro
+  ```json
+  {
+    "nombre": "Nombre del Personaje",
+    "altura": "Altura en centímetros",
+    "peso": "Peso en kilogramos",
+    "color_piel": "Color de la piel",
+    "color_cabello": "Color del cabello",
+    "color_ojos": "Color de los ojos",
+    "fecha_nacimiento": "Fecha de nacimiento",
+    "género": "Género"
+  }
 
-Cuerpo de la Solicitud:
+### Respuesta Exitosa
 
-{
-  "nombre": "Nombre del Personaje",
-  "altura": "Altura en centímetros",
-  "peso": "Peso en kilogramos",
-  "color_piel": "Color de la piel",
-  "color_cabello": "Color del cabello",
-  "color_ojos": "Color de los ojos",
-  "fecha_nacimiento": "Fecha de nacimiento",
-  "género": "Género"
-}
-Respuesta Exitosa:
+La respuesta exitosa para la creación de un registro en SWAPI es un objeto JSON que contiene un mensaje de confirmación:
 
-{
-  "mensaje": "Registro creado con éxito en SWAPI"
-}
-Notas Adicionales
-Este proyecto utiliza Express.js como marco de trabajo para gestionar las rutas y controladores HTTP.
-Asegúrate de tener las credenciales de AWS configuradas si planeas utilizar servicios de AWS.
-Contribución
+    ```json
+    {
+    "mensaje": "Registro creado con éxito en SWAPI"
+    }
+
+### Notas Adicionales
+
+- Este proyecto utiliza Express.js como marco de trabajo para gestionar las rutas y controladores HTTP.
+- Asegúrate de tener las credenciales de AWS configuradas si planeas utilizar servicios de AWS.
+
+### Contribución
+
 Si deseas contribuir al proyecto, crea una solicitud de extracción (pull request) y sigue las guías de estilo y convenciones de codificación.
 
-Contacto
-Para preguntas o comentarios, contacta a Fredy Torpoco Mucha en [fredytorpocomucha@gmail.com].
+### Contacto
+
+Para preguntas o comentarios, contacta a [Fredy Torpoco Mucha] en [fredytorpocomucha@gmail.com].
